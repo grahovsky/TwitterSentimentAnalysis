@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwifteriOS
 
 class ViewController: UIViewController {
     
@@ -14,8 +15,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var sentimentLabel: UILabel!
     
+    var swifter: Swifter?
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let path = Bundle.main.path(forResource: "APIKey", ofType: "plist") {
+            let aPIKeyDictonary = NSDictionary(contentsOfFile: path)
+            
+            let aPIKey = aPIKeyDictonary?.value(forKey: "API Key") as! String
+            let aPISecret = aPIKeyDictonary?.value(forKey: "API Secret") as! String
+            
+            
+            swifter = Swifter(consumerKey: aPIKey, consumerSecret: aPISecret)
+            
+            print(aPIKey + " " + aPISecret)
+            
+        }
         
     }
     

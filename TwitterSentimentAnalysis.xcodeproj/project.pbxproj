@@ -10,6 +10,7 @@
 		B53344CF224CC5A500A40AFD /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B53344CE224CC5A500A40AFD /* TweetSentimentClassifier.mlmodel */; };
 		B53344E2224CD02A00A40AFD /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53344DB224CD01200A40AFD /* SwifteriOS.framework */; };
 		B53344E3224CD02A00A40AFD /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B53344DB224CD01200A40AFD /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B53344E8224CD92C00A40AFD /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = B53344E7224CD92C00A40AFD /* APIKey.plist */; };
 		B5969206224BDE8A0023BAA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5969205224BDE8A0023BAA6 /* AppDelegate.swift */; };
 		B5969208224BDE8A0023BAA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5969207224BDE8A0023BAA6 /* ViewController.swift */; };
 		B596920B224BDE8A0023BAA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5969209224BDE8A0023BAA6 /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 /* Begin PBXFileReference section */
 		B53344CE224CC5A500A40AFD /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetSentimentClassifier.mlmodel; sourceTree = "<group>"; };
 		B53344D0224CD01200A40AFD /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		B53344E7224CD92C00A40AFD /* APIKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKey.plist; sourceTree = "<group>"; };
 		B5969202224BDE8A0023BAA6 /* TwitterSentimentAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterSentimentAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5969205224BDE8A0023BAA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5969207224BDE8A0023BAA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				B596920C224BDE8C0023BAA6 /* Assets.xcassets */,
 				B596920E224BDE8C0023BAA6 /* LaunchScreen.storyboard */,
 				B5969211224BDE8C0023BAA6 /* Info.plist */,
+				B53344E7224CD92C00A40AFD /* APIKey.plist */,
 			);
 			path = TwitterSentimentAnalysis;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5969210224BDE8C0023BAA6 /* LaunchScreen.storyboard in Resources */,
+				B53344E8224CD92C00A40AFD /* APIKey.plist in Resources */,
 				B596920D224BDE8C0023BAA6 /* Assets.xcassets in Resources */,
 				B596920B224BDE8A0023BAA6 /* Main.storyboard in Resources */,
 			);
