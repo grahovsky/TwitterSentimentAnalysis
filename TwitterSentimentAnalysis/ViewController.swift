@@ -26,12 +26,15 @@ class ViewController: UIViewController {
             let aPIKey = aPIKeyDictonary?.value(forKey: "API Key") as! String
             let aPISecret = aPIKeyDictonary?.value(forKey: "API Secret") as! String
             
-            
             swifter = Swifter(consumerKey: aPIKey, consumerSecret: aPISecret)
             
-            print(aPIKey + " " + aPISecret)
-            
         }
+        
+        swifter?.searchTweet(using: "@Apple", success: { (results, metadata) in
+            print(results)
+        }, failure: { (error) in
+            print("There was an error with the Twitter API Request, \(error.localizedDescription)")
+        })
         
     }
     
