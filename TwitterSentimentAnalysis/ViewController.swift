@@ -36,13 +36,24 @@ class ViewController: UIViewController {
         
         swifter?.searchTweet(using: "@Apple", lang: "en", count: 100, tweetMode: .extended, success: { (results, metadata) in
             //print(results)
+            
+            var tweets = [String]()
+            
+            for i in 0..<100 {
+                if let tweet = results[i]["full_text"].string {
+                    tweets.append(tweet)
+                }
+            }
+            
+            print(tweets)
+            
         }, failure: { (error) in
             print("There was an error with the Twitter API Request, \(error.localizedDescription)")
         })
         
-        let prediction = try! sentimentClassifier.prediction(text: "@Apple is the best company!")
-        
-        print(prediction.label)
+//        let prediction = try! sentimentClassifier.prediction(text: "@Apple is the best company!")
+//
+//        print(prediction.label)
         
     }
     
