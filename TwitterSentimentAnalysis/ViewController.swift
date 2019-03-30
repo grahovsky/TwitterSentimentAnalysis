@@ -9,6 +9,7 @@
 import UIKit
 import SwifteriOS
 import CoreML
+import SwiftyJSON
 
 class ViewController: UIViewController {
     
