@@ -11,7 +11,7 @@ import SwifteriOS
 import CoreML
 import SwiftyJSON
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var textField: UITextField!
@@ -26,6 +26,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        textField.delegate = self
+        
         if let path = Bundle.main.path(forResource: "APIKey", ofType: "plist") {
             let aPIKeyDictonary = NSDictionary(contentsOfFile: path)
             
@@ -36,6 +38,12 @@ class ViewController: UIViewController {
             
         }
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        fetchTweets()
+        return false
     }
     
     @IBAction func predictPressed(_ sender: Any) {
