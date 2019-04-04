@@ -28,6 +28,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         textField.delegate = self
         
+        hideKeyboardWhenTappedAround()
+        
         if let path = Bundle.main.path(forResource: "APIKey", ofType: "plist") {
             let aPIKeyDictonary = NSDictionary(contentsOfFile: path)
             
@@ -124,6 +126,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.sentimentLabel.text = "🤮"
         }
         
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
 }
