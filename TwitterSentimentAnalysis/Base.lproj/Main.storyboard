@@ -21,18 +21,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gM4-aT-Ob6">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="ucq-fU-Hv3">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="250" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ucq-fU-Hv3">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gR-Pr-NBA">
-                                                <rect key="frame" x="153" y="0.0" width="108" height="362"/>
+                                                <rect key="frame" x="157" y="0.0" width="100" height="362"/>
                                                 <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="100"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How do people feel about..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y1N-4J-vem">
-                                                <rect key="frame" x="0.0" y="562" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="561" width="414" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="DNm-ai-EsU"/>
                                                 </constraints>
@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OyZ-qx-lCY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1043" y="95"/>
+            <point key="canvasLocation" x="1042.0289855072465" y="94.419642857142847"/>
         </scene>
     </scenes>
 </document>
